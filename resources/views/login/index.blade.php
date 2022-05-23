@@ -24,7 +24,7 @@
             <form action="/login" method="post">
               @csrf
               <img class="mb-5 img-fluid" src="/images/Jasa_Marga_logo.png" alt="">
-              <h1 class="h4 mb-3 fw-semibold text-center lh-lg text-light">APLIKASI MONITORING <br> PEMESANAN HOTEL & TRANSPORT <br> (SPPD)</h1>
+              <h1 class="h4 mb-3 fw-semibold text-center lh-lg text-dark">APLIKASI MONITORING <br> PEMESANAN HOTEL & TRANSPORT <br> (SPPD)</h1>
                 
             <div class="border border-light p-3 bg-dark text-dark bg-opacity-75">
               <div class="form-floating">

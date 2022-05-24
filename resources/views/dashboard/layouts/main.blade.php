@@ -14,6 +14,12 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/dashboard.css" rel="stylesheet">
+
+    {{-- Custom table --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script>
+
   </head>
   <body>
     
@@ -38,6 +44,6 @@
 
     <script src="/js/dashboard.js" ></script>
     <script src="/js/sidebar.js" ></script>
-
+    <script src="/js/table.js" ></script>
   </body>
 </html>

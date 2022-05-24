@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\ManajemenPenggunaController;
+use App\Http\Controllers\ManajemenController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,5 +28,5 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/dashboard', function(){
     return view('dashboard.index');
 })->middleware('auth');
+Route::resource('/dashboard/manajemen', ManajemenController::class)->middleware('auth');
 
-Route::get('/dashboard/manajemen', [ManajemenPenggunaController::class, 'index'])->middleware('auth');

@@ -21,10 +21,20 @@ class UserSeeder extends Seeder
             'name' => 'Admin Aplikasi',
             'username' => 'admin1',
             'email' => 'admin@admin.com',
-            'unit_kerja' => 'COMMUNITY DEVELOPMENT GROUP',
+            'unitkerja_id' => 2,
             'password' => bcrypt('admin123'),
             'remember_token' => Str::random(10),
             'level' => 'admin',
+        ]);
+
+        User::create([
+            'name' => 'Yanto',
+            'username' => 'yanto1',
+            'email' => 'yanto@user.com',
+            'unitkerja_id' => 1,
+            'password' => bcrypt('yanto123'),
+            'remember_token' => Str::random(10),
+            'level' => 'user',
         ]);
     }
 }

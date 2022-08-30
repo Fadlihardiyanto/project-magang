@@ -1,0 +1,41 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('datagls', function (Blueprint $table) {
+            $table->id();
+            $table->string('nomor');
+            $table->integer('lampiran');
+            $table->string('vendor');
+            $table->string('alamat');
+            $table->string('kota');
+            $table->string('telephone');
+            $table->string('up');
+            $table->string('catatan1');
+            $table->string('catatan2');
+            $table->string('catatan3');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('datagls');
+    }
+};
